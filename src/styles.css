@@ -1,1 +1,388 @@
-/* You can add global styles to this file, and also import other style files */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  size: 100px;
+}
+
+.navbar {
+  padding: "10px";
+}
+
+.btn-custom {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: larger;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  color: black;
+}
+
+.btn-custom:hover {
+  background-color: #c142bf;
+  border-color: #c142bf;
+  color: white;
+}
+
+.btn-custom:active {
+  background-color: #c142bf;
+  border-color: #c142bf;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dashboard {
+  display: flex;
+  padding: 20px;
+  height: 100vh;
+}
+
+.burst-text {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-left: 100px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(0px) translateZ(0px);
+  animation: burstIn 3s forwards infinite;
+}
+
+@keyframes burstIn {
+  0% {
+    opacity: 0;
+    transform: translateY(0px) translatez(0px); /* Start from below */
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0) translatez(0px); /* Move to its final position */
+  }
+  80% {
+    opacity: 1; /* Hold the position for some time */
+    transform: translateY(0) translatez(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0px) translatez(0px); /* Move out */
+  }
+}
+
+/* Apply a delay to each letter for the burst effect */
+.letter:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.letter:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.letter:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.letter:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.letter:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.letter:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.letter:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.letter:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.letter:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.letter:nth-child(10) {
+  animation-delay: 1s;
+}
+.letter:nth-child(11) {
+  animation-delay: 1.1s;
+}
+.letter:nth-child(12) {
+  animation-delay: 1.2s;
+}
+.letter:nth-child(13) {
+  animation-delay: 1.3s;
+}
+.letter:nth-child(14) {
+  animation-delay: 1.4s;
+}
+.letter:nth-child(15) {
+  animation-delay: 1.5s;
+}
+.letter:nth-child(16) {
+  animation-delay: 1.6s;
+}
+.letter:nth-child(17) {
+  animation-delay: 1.7s;
+}
+.letter:nth-child(18) {
+  animation-delay: 1.8s;
+}
+.letter:nth-child(19) {
+  animation-delay: 1.9s;
+}
+.letter:nth-child(20) {
+  animation-delay: 2s;
+}
+.letter:nth-child(21) {
+  animation-delay: 2.1s;
+}
+.letter:nth-child(22) {
+  animation-delay: 2.2s;
+}
+.letter:nth-child(23) {
+  animation-delay: 2.3s;
+}
+
+/* Styling the emoji */
+.emoji {
+  font-size: 2.5rem;
+  margin-left: 10px;
+  display: inline-block;
+  animation: waveHand 2s infinite; /* Waving animation for the emoji */
+}
+
+/* Wave hand animation for the emoji */
+@keyframes waveHand {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.welcomeImage {
+  height: 40rem;
+  width: 50rem;
+}
+
+.cover-letter-lines {
+  padding-left: 50px;
+  margin-top: 0px;
+  font-size: 1.5rem;
+}
+
+.social-media-icons {
+  padding-left: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+i.fab {
+  font-size: 3rem;
+}
+i.fab:hover {
+  color: #333;
+}
+
+a {
+  padding-right: 20px;
+}
+
+.github {
+  color: #333;
+}
+
+.insta {
+  color: #e1306c;
+}
+
+.medium {
+  color: #333;
+}
+
+.discord {
+  height: 80px;
+  width: 80px;
+  margin-top: -10px;
+  margin-left: -20px;
+}
+
+.leetcode {
+  height: 50px;
+  width: 50px;
+}
+
+.btn-custom-resume {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: larger;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #c142bf;
+  border-color: #c142bf;
+  color: white;
+}
+
+.dashboard-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.skills-page {
+  display: flex;
+  width: 100%;
+}
+
+.skill-div-1,
+.skill-div-2 {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-img {
+  width: 40rem;
+  height: 35rem;
+}
+
+/* General logo styling */
+.logo {
+  width: 55px; /* Adjust the width and height as needed */
+  height: 55px;
+  margin: 0 15px; /* Adds space between logos */
+  transition: transform 0.3s ease; /* For hover effect */
+  position: relative;
+}
+
+/* Hover effect for scaling the logos */
+.logo:hover {
+  transform: scale(1.1); /* Slightly enlarges the logo on hover */
+}
+
+/* Tooltip container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Adds spacing between rows */
+}
+
+/* Tooltip text styling */
+.logo:hover::after {
+  content: attr(alt); /* The tooltip text will come from the alt attribute */
+  position: absolute;
+  bottom: -30px; /* Position the tooltip below the logo */
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 12px;
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+/* Hides the tooltip by default */
+.logo::after {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.work-header {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-div {
+  display: flex;
+  /* align-items: center; */
+  padding: 20px;
+  justify-content: space-around;
+}
+.company-logo {
+  height: 150px;
+  width: 150px;
+}
+
+.project-page {
+  padding: 20px;
+}
+
+.project-card:hover {
+  border: 3px solid #dd2476;
+}
+
+.project-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .project-card {
+    width: 100%;
+  }
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.scroll-to-top:hover {
+  background-color: #0056b3;
+}

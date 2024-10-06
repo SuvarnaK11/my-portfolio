@@ -1,0 +1,61 @@
+<h1 style="padding: 15px" class="work-header">Projects</h1>
+<div class="container project-page">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let project of projects">
+      <div
+        class="card shadow-lg project-card"
+        style="
+          width: 100%;
+          margin-bottom: 20px;
+          border-radius: 15px;
+          overflow: hidden;
+          /* background: linear-gradient(135deg, #f5af19 0%, #f12711 100%); */
+        "
+      >
+        <div
+          class="card-body"
+          style="
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 0 0 15px 15px;
+          "
+        >
+          <div style="display: flex; gap: 15px; align-items: center">
+            <img
+              [src]="project.logo"
+              class="project-logo img-fluid"
+              alt="Project Logo"
+            />
+            <h4 class="card-title" style="color: #555; font-weight: bold">
+              {{ project.name }}
+            </h4>
+          </div>
+          <p
+            class="card-text"
+            style="font-size: 1.2rem; color: #333; margin-top: 15px"
+          >
+            {{ project.description }}
+          </p>
+          <h5 style="color: #555">{{ project.technologies }}</h5>
+
+          <div style="margin-top: 20px">
+            <a
+              [href]="project.siteLink"
+              target="_blank"
+              class="btn btn-primary"
+              style="
+                background: linear-gradient(135deg, #ff512f 0%, #dd2476 100%);
+                /* background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); */
+                padding: 10px 20px;
+                border: none;
+                border-radius: 25px;
+                font-weight: 600;
+              "
+              >{{ project.visit }}</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
